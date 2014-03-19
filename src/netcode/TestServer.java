@@ -1,13 +1,18 @@
-// File Name GreetingServer.java
+package netcode;
 
 import java.net.*;
 import java.io.*;
 
-public class GreetingServer extends Thread
+/**
+ * @authors Stephen Pardue, Ian Stainbrook, and James Ruiz
+ * @date March 19, 2014
+ */
+
+public class TestServer extends Thread
 {
    private ServerSocket serverSocket;
    
-   public GreetingServer(int port) throws IOException
+   public TestServer(int port) throws IOException
    {
       serverSocket = new ServerSocket(port);
       serverSocket.setSoTimeout(10000);
@@ -48,7 +53,7 @@ public class GreetingServer extends Thread
       int port = Integer.parseInt(args[0]);
       try
       {
-         Thread t = new GreetingServer(port);
+         Thread t = new TestServer(port);
          t.start();
       }catch(IOException e)
       {

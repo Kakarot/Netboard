@@ -1,9 +1,14 @@
-// File Name GreetingClient.java
+package netcode;
 
 import java.net.*;
 import java.io.*;
 
-public class GreetingClient
+/**
+ * @authors Stephen Pardue, Ian Stainbrook, and James Ruiz
+ * @date March 19, 2014
+ */
+
+public class TestClient
 {
    public static void main(String [] args)
    {
