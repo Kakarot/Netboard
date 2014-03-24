@@ -1,8 +1,13 @@
+package netcode;
 import java.util.ArrayList;
 import java.io.Serializable;
 
 public class DeltaMessage implements Message, Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private ArrayList<Pixel> pixels;
 
 	public DeltaMessage()
