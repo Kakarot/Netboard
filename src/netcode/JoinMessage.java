@@ -1,27 +1,24 @@
 package netcode;
+
 import java.net.SocketAddress;
 import java.io.Serializable;
 
 public class JoinMessage implements Message, Serializable
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	private SocketAddress masterIP;
+	private SocketAddress masterAddress;
 
 	public JoinMessage()
 	{
-		masterIP = null;
+		masterAddress = null;
 	}
 
-	public JoinMessage(SocketAddress masterIP)
+	public JoinMessage(SocketAddress masterAddress)
 	{
-		this.masterIP = masterIP;
+		this.masterAddress = masterAddress;
 	}
 
 	public SocketAddress getPayload()
 	{
-		return masterIP;
+		return masterAddress;
 	}
 }

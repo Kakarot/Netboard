@@ -1,0 +1,9 @@
+#!/bin/sh
+cd netcode
+echo "Cleaning..."
+rm -f *.class
+rm -f .*.swap
+rm -f .*.swp
+echo "Compiling..."
+javac *.java
+echo "Done."
